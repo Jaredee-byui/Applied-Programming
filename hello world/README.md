@@ -19,4 +19,4 @@ The purpose was to demonstrate my development environment with Python, Visual St
 # Useful Websites
 
 * [Github Site](https://github.com/)
-* [Web Site Name](http://url.link.goes.here)
+* [W3 Schools setup guide for python](https://www.w3schools.com/python/python_getstarted.asp)
