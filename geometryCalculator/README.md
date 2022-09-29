@@ -1,30 +1,34 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+So, it had been awhile since I had last written any code using classes. I had also been meaning to get my 
+feet wet with C++. As such, I decided to remake an app I had written in C for a geometry calculator.
+Little did I know, this would ballon into a rather large project. It did get finished though. 
 
-{Provide a description of your app.  Describe how to use the app.}
+The geometry calculator, it's a rather simple program. The user interfaces with the program via a simple
+menu I drafted up. The user can navigate through the menu to several sub-menus that handle different
+shapes. The user can then find the area and perimeter by entering the required information. The info
+for the shape is stored to an object which can then be accessed by the user while in that sub-menu. 
 
-{Describe your purpose for creating this app.}
+As mentioned earlier, my primary goal with creating this project was to get myself some practice in
+object orientated programming useing C++.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the app running and a walkthrough of the code.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/_UhiJsK9TBo)
 
 # Development Environment
 
-{Describe the tools that you used to develop the app}
+The program was developed using Visual Studio. 
 
-{Describe the programming language that you used and any libraries.}
+C++ was the development language for this pet project, the math.h library was also used.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+
+* [W3 Schools](https://www.w3schools.com/cpp/default.asp)
+* [cplusplus.com](https://cplusplus.com/reference/cmath/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Improve user interface
+* Expand program capabilities
+* Improve error handling
