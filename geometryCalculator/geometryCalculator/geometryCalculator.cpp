@@ -5,12 +5,26 @@
 #include <math.h>
 using namespace std;
 
+/*
+struct to handle constants, can be expanded to handle more such as physics, trig or otherwise.
+
+*/
+
 struct {
     double pi = 3.14159265359;
     double e = 2.71828;
 
 
 } constants;
+
+/*
+The parent shape class, this class is rather simple in its function. I gave it some base
+attributes such as area, perimeter, side length, etc. It also posses some basic methods
+that would allow for attributes to be called and set. I made the classes and all its 
+attributes public since this was my first time writing an object orientated program in
+C++. 
+
+*/
 
 class shape {
 public:
@@ -20,7 +34,7 @@ public:
     double sideLength = 0.0;
     double height = 0.0;
     string shapeName;
-    /*double pi = 3.14159265359;*/
+    
     
     double getSide() {
         return sideLength;
@@ -52,12 +66,14 @@ public:
     void findPerimeter() {
         return;
     }
+    // get shape, outputs the stats of a given shape to user
     void getShape() {
         cout << "\nShape: " << shapeName << endl;
         cout << "Area: " << area << endl;
         cout << "Perimeter: " << perimeter << endl;
         cout << "Side Length: " << sideLength << endl;
     }
+    // menu, is modified according to the needs of each daughter class
     void menu() {
         return;
     }
@@ -66,6 +82,12 @@ public:
 
 };
 
+
+/*
+The first child class, Circle. The circle ultimately behaves like 
+an other shape in terms of how it inherits from parent. findDiameter
+is a unique function to this class. 
+*/
 class circle: public shape {
 public:
     double diameter = 0.0;
@@ -136,7 +158,9 @@ public:
         
     }
 };
-
+/*
+Square class, inherits from shape. 
+*/
 
 class square: public shape {
 public:
@@ -194,7 +218,11 @@ public:
 
 
 };
-
+/*
+Rectangle, inherits from shape. Has the unqiue property of using 
+side length and height for its calculations. It behaves in many
+ways similarly to a square. 
+*/
 class rectangle: public shape {
 public:
     string shapeName = "Rectangle";
@@ -268,7 +296,10 @@ public:
     
 
 };
-
+/*
+triangle class, also utilizes the sidelength and base properties in
+its calculations. 
+*/
 class triangle : public shape {
 public:
     string shapeName = "Triangle";
@@ -340,7 +371,9 @@ public:
     }
 };
 
-
+/*
+Pentagon class, handles cases of equilateral pentagons. 
+*/
 class pentagon : public shape {
 public:
     string shapeName = "Pentagon";
@@ -393,7 +426,9 @@ public:
         
     }
 };
-
+/*
+Hexagon class, handles cases of equilateral hexagons. 
+*/
 class hexagon : public shape{
 public:
     string shapeName = "Hexagon";
@@ -446,7 +481,9 @@ public:
     }
 
 };
-
+/*
+Octagon class, handles cases of equilateral octagons. 
+*/
 class octagon : public shape{
 public:
     string shapeName = "Octagon";
@@ -500,7 +537,10 @@ public:
 };
 
 
-
+/*
+Main function, handles main menu and calling respective shapes
+to perform calculations. 
+*/
 int main()
 {
     int userChoice = 1;
